@@ -8,9 +8,11 @@ from concurrent.futures import ThreadPoolExecutor
 class Novel:
     def __init__(self):
         self.workers = 32
-        self.headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-                                      'AppleWebKit/537.36 (KHTML, like Gecko) '
-                                      'Chrome/87.0.4280.141 Safari/537.36'}
+        self.headers = {
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+            'AppleWebKit/537.36 (KHTML, like Gecko) '
+            'Chrome/88.0.4324.150 Safari/537.36'
+        }
 
     def get_text(self, expr, link, params=None):
         response = None
